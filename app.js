@@ -80,7 +80,3 @@ function reiniciarJuego() {
   console.log(listaAmigosSorteados);
   return;
 }
-
-//Validar que no se pueda ingresar ningún número y ver si podemos corregir lo de caractéres especiales 
-
-//validar el inabled si se puede desabilitar
