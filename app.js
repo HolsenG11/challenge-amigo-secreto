@@ -1,14 +1,11 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-let listaAmigosSorteados = [];
+var listaAmigosSorteados = [];
 
 function agregarAmigo() {
   //obteniendo el nombre del amigo --- .trim() para que solo capture el nombre sin espacios
   let nombreAmigo = document.getElementById("amigo").value.trim();
-
-  //document.querySelector("#resultado").value = "";
-  let mensajeResultado = document.getElementById("resultado");
-  mensajeResultado.innerHTML = "";
+  LimpiarResultado();
 
   if (nombreAmigo === "") {
     alert("Por favor, ingrese un nombre");
@@ -17,21 +14,27 @@ function agregarAmigo() {
       alert(
         "Por favor, ingrese su segundo nombre o un apodo, ya que este nombre que desea ingresar, ya se encuentra en la lista"
       );
-      LimpiarCaja();
+      limpiarCaja();
     } else {
       listaAmigosSorteados.push(nombreAmigo);
-      LimpiarCaja();
+      limpiarCaja();
       actualizarLista();
     }
   }
 
-  //validando que la lista se este agregando correctamente
+  //validando que los elementos se estén agregando correctamente a la lista
   console.log(listaAmigosSorteados);
   return;
 }
 
-function LimpiarCaja() {
+function limpiarCaja() {
   document.querySelector("#amigo").value = "";
+  return;
+}
+
+function LimpiarResultado() {
+  let mensajeResultado = document.getElementById("resultado");
+  mensajeResultado.innerHTML = "";
   return;
 }
 
@@ -44,7 +47,6 @@ function actualizarLista() {
     li.textContent = amigo; // Asignamos el nombre del amigo
     lista.appendChild(li); // Agregando el elemento <li> a la lista <ul>
   });
-
   return;
 }
 
@@ -60,7 +62,7 @@ function sortearAmigo() {
     let indiceGanador = Math.floor(Math.random() * listaAmigosSorteados.length);
     let ganador = listaAmigosSorteados[indiceGanador];
 
-    //valida si lo puede mostrar de manera directa o necesitamos crear un <li>
+    //Mostrando al ganador
     document.getElementById("resultado").textContent =
       "🎉 El amigo secreto es: " + ganador + " 🎉";
 
@@ -71,14 +73,14 @@ function sortearAmigo() {
   }
 }
 
-/* VALIDACIONES
-
-// Validar si se debe Limpiar la lista para poder volver a sortear o se debe poder seguir agregando y sorteando
-
-//reiniciar juego 
+function reiniciarJuego() {
+  listaAmigosSorteados.length = 0;
+  actualizarLista();
+  LimpiarResultado();
+  console.log(listaAmigosSorteados);
+  return;
+}
 
 //Validar que no se pueda ingresar ningún número y ver si podemos corregir lo de caractéres especiales 
 
-//Ver si podemos cambiar algunos mensajes a que se visualicen en el lu y no en el alert
-
-*/
+//validar el inabled si se puede desabilitar
