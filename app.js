@@ -6,6 +6,10 @@ function agregarAmigo() {
   //obteniendo el nombre del amigo --- .trim() para que solo capture el nombre sin espacios
   let nombreAmigo = document.getElementById("amigo").value.trim();
 
+  //document.querySelector("#resultado").value = "";
+  let mensajeResultado = document.getElementById("resultado");
+  mensajeResultado.innerHTML = "";
+
   if (nombreAmigo === "") {
     alert("Por favor, ingrese un nombre");
   } else {
@@ -61,7 +65,6 @@ function sortearAmigo() {
       "🎉 El amigo secreto es: " + ganador + " 🎉";
 
     //eliminando de la lista el amigo que ya ha sido sorteado y actualizando la lista
-    //VALIDAR QUE APAREZCA DURANTE UN TIEMPO EL GANADOR o ocultar cuando vas a agregar y si seguis sorteando dejarlo igual
     listaAmigosSorteados.splice(indiceGanador, 1);
     actualizarLista();
     return;
