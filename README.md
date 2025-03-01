@@ -20,5 +20,14 @@ Amigo Secreto es un juego en el que un grupo de participantes intercambia regalo
 1. Registrar a todos los participantes.
 2. Ejecutar el sorteo de manera aleatoria.
 3. Visualizar el nombre del ganador.
+4. Reiniciar el juego para volver a jugar.
+
+### Contacto 
+Para cualquier consulta, escribir al siguiente correo [Holsen García](holsenzarate70@gmail.com)
+
+### Validando
+![Logo del proyecto](assets/amigo-secreto.png)  
+
+
 
 
