@@ -23,10 +23,7 @@ Amigo Secreto es un juego en el que un grupo de participantes intercambia regalo
 4. Reiniciar el juego para volver a jugar.
 
 ### Contacto 
-Para cualquier consulta, escribir al siguiente correo [Holsen García](holsenzarate70@gmail.com)
-
-### Validando
-![Logo del proyecto](assets/amigo-secreto.png)  
+Para cualquier consulta, escribir al siguiente correo: holsenzarate70@gmail.com
 
 
 
