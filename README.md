@@ -20,7 +20,7 @@ Amigo Secreto es un juego en el que un grupo de participantes intercambia regalo
 1. Descargar el archivo del Github o clonar el repositorio.
 2. Ejecutar el programa y vizualizaras la siguiente pantalla.
 
-![Logo del proyecto](assets/Pantalla inicial.png)  
+![Logo del proyecto](assets/amigo-secreto.png)  
 
 4. Registrar a todos los participantes, ingresando el nombre y dando click en registrar
 
