@@ -7,7 +7,7 @@ Amigo Secreto es un juego en el que un grupo de participantes intercambia regalo
 - Registrar participantes.
 - Sorteo aleatorio de la lista de amigos.
 - Visualizar el gandor del sorteo.
-- Interfaz amigable
+- Interfaz amigable.
 
 ### Tecnologías Utilizadas
 - HTML
@@ -17,10 +17,15 @@ Amigo Secreto es un juego en el que un grupo de participantes intercambia regalo
 - Visual Studio Code
 
 ### Uso
-1. Registrar a todos los participantes.
-2. Ejecutar el sorteo de manera aleatoria.
-3. Visualizar el nombre del ganador.
-4. Reiniciar el juego para volver a jugar.
+1. Descargar el archivo del Github o clonar el repositorio.
+2. Ejecutar el programa y vizualizaras la siguiente pantalla.
+![Logo del proyecto](assets/Pantalla inicial.png)  
+3. Registrar a todos los participantes, ingresando el nombre y dando click en registrar
+![Logo](assets/Registrar amigo.png)
+4. Ejecutar el sorteo de manera aleatoria y visualizar el nombre del ganador.
+![Logo](assets/Sortear ganador.png)
+5. Reiniciar el juego para volver a jugar.
+![Logo](assets/Reiniciar juego.png)
 
 ### Contacto 
 Para cualquier consulta, escribir al siguiente correo: holsenzarate70@gmail.com
